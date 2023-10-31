@@ -79,12 +79,15 @@ const Section = styled.div`
       padding: 2rem;
     }
     aside input {
-      width: 350px;
+      width: 300px;
+    }
+    .subscribe-btn {
+      width: 100px;
     }
   }
   @media screen and (max-width: 470px) {
     aside input {
-      width: 250px;
+      width: 200px;
     }
   }
 `;

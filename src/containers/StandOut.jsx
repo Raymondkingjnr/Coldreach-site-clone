@@ -116,4 +116,10 @@ const Section = styled.div`
   .card p {
     color: #6b7280;
   }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      height: 350px;
+    }
+  }
 `;
