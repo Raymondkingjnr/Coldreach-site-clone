@@ -1,0 +1,154 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* box-sizing: border-box; */
+  width: 100%;
+  color: #1f2937;
+  background: #f9fafb;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Roboto";
+  font-size: 25px;
+  line-height: 1.5rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@media screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 17px;
+  }
+}
+
+p {
+  font-family: "Roboto";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.btn {
+  padding: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Roboto";
+  border: transparent;
+  background: transparent;
+  border-radius: 7px;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1f2937;
+}
+
+li,
+ul {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 550;
+  cursor: pointer;
+}
+.width-section {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ANIMATIONS */
+
+.visuallyHidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.hamburger {
+  display: none;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+.hamburger .bar {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: maroon;
+  background: gray;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+.bar1 {
+  top: 0;
+}
+
+.bar2,
+.bar3 {
+  top: 13.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+.checkbox2:checked + label > .hamburger2 > .bar1 {
+  transform: translateX(40px);
+  background-color: transparent;
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar2 {
+  transform: rotate(45deg);
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar3 {
+  transform: rotate(-45deg);
+}
+
+.checkbox2:checked + label > .hamburger2 > .bar4 {
+  transform: translateX(-40px);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1100px) {
+  .hamburger {
+    display: block;
+    margin-right: 2rem;
+  }
+}
