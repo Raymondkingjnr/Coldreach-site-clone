@@ -131,7 +131,7 @@ const Section = styled.div`
       #055de6,
       #4f46e5
     );
-    top: 10%;
+    top: 7%;
     left: 0%;
     position: fixed;
     color: #fff;
