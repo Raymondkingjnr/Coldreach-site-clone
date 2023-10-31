@@ -1,5 +1,5 @@
 import React from "react";
-import Y from "../assets/YC-logo.png";
+import Y from "../assets/YC.png";
 import styled from "styled-components";
 
 export const Sponsor = () => {
